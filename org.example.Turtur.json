@@ -29,8 +29,8 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "file:///var/home/private/Projects"
+                    "type" : "dir",
+                    "path" : "."
                 }
             ]
         }
