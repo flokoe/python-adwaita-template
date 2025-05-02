@@ -20,9 +20,10 @@
 from gi.repository import Adw
 from gi.repository import Gtk
 
-@Gtk.Template(resource_path='/org/example/Turtur/window.ui')
+
+@Gtk.Template(resource_path="/org/example/Turtur/window.ui")
 class TurturWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'TurturWindow'
+    __gtype_name__ = "TurturWindow"
 
     label = Gtk.Template.Child()
 

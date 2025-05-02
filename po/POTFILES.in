@@ -5,4 +5,4 @@ data/org.example.Turtur.metainfo.xml.in
 data/org.example.Turtur.gschema.xml
 src/main.py
 src/window.py
-src/window.ui
+src/window.blp
