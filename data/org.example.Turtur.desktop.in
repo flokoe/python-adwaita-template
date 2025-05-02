@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=turtur
+Exec=turtur
+Icon=org.example.Turtur
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

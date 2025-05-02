@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/org.example.Turtur.desktop.in
+data/org.example.Turtur.metainfo.xml.in
+data/org.example.Turtur.gschema.xml
+src/main.py
+src/window.py
+src/window.ui
