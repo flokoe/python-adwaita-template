@@ -17,15 +17,16 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from gi.repository import Adw
-from gi.repository import Gtk
+from typing import Any
+
+from gi.repository import Adw, Gtk
 
 
 @Gtk.Template(resource_path="/org/example/Turtur/window.ui")
 class TurturWindow(Adw.ApplicationWindow):
     __gtype_name__ = "TurturWindow"
 
-    label = Gtk.Template.Child()
+    label: Gtk.Label = Gtk.Template.Child()
 
-    def __init__(self, **kwargs):
+    def __init__(self, **kwargs: Any) -> None:
         super().__init__(**kwargs)

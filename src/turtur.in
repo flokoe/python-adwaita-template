@@ -19,15 +19,15 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-import os
-import sys
-import signal
-import locale
 import gettext
+import locale
+import os
+import signal
+import sys
 
-VERSION = "@VERSION@"
-pkgdatadir = "@pkgdatadir@"
-localedir = "@localedir@"
+VERSION: str = "@VERSION@"
+pkgdatadir: str = "@pkgdatadir@"
+localedir: str = "@localedir@"
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     from gi.repository import Gio
 
     resource = Gio.Resource.load(os.path.join(pkgdatadir, "turtur.gresource"))
-    resource._register() # type: ignore
+    resource._register()  # type: ignore
 
     from turtur import main
 
